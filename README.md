@@ -1,1 +1,1 @@
-# abzy-kz
+# Source of abzy.kz
