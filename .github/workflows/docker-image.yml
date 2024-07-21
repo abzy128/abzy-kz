@@ -1,4 +1,4 @@
-name: Build Docker and Deploy to Kubernetes
+name: build and deploy
 
 on:
   push:
@@ -9,7 +9,6 @@ on:
 jobs:
 
   build:
-
     runs-on: [self-hosted, linux]
 
     steps:
@@ -19,7 +18,8 @@ jobs:
   
   deploy:
     runs-on: [self-hosted, linux]
-
+    
+    needs: build
     steps:
     - uses: actions/checkout@v4
     - name: Deploy to Kubernetes
