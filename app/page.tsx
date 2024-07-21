@@ -1,4 +1,5 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from "app/components/posts";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -12,9 +13,10 @@ export default function Page() {
         I build things.
         `}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <div className="my-8"></div>
+      <Image src={"/literallyMe.png"} alt="literrallyMe.png" width={256} height={256}/>
+      <p>literally, this guy is like me.</p>
+      <p>sitting there, building some random stuff at 3am.</p>
     </section>
-  )
+  );
 }
