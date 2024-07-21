@@ -14,7 +14,7 @@ spec:
       containers:
       - name: abzy-kz
         image: abzy128/abzy-kz:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         resources:
           requests:
             memory: "128Mi"
