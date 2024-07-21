@@ -7,8 +7,11 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  '/someOtherPage':{
-    name: 'some other page',
+  'https://status.abzy.kz':{
+    name: 'status',
+  },
+  'https://whoami.abzy.kz':{
+    name: 'who are you?',
   },
 }
 
