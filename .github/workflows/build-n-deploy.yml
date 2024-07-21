@@ -14,12 +14,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag abzy-kz:latest
+      run: docker build . --file Dockerfile --tag abzy128/abzy-kz:latest
+  publish:
+    runs-on: [self-hosted, linux]
+    
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+    - name: Publish the Docker image
+      run: docker push abzy128/abzy-kz:latest
   
   deploy:
     runs-on: [self-hosted, linux]
     
-    needs: build
+    needs: publish
     steps:
     - uses: actions/checkout@v4
     - name: Deploy to Kubernetes

@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: abzy-kz
-        image: abzy-kz:latest
-        imagePullPolicy: Never
+        image: abzy128/abzy-kz:latest
+        imagePullPolicy: IfNotPresent
         resources:
           requests:
             memory: "128Mi"
