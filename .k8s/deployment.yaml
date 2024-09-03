@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: abzy-kz
-        image: abzy128/abzy-kz:latest
+        image: abzy128/abzy-kz:main
         imagePullPolicy: Always
         resources:
           requests:
