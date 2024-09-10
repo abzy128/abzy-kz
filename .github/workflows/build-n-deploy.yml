@@ -51,3 +51,6 @@ jobs:
       - uses: actions-hub/kubectl@master
         with:
           args: apply -f .k8s/deployment.yaml
+      - uses: actions-hub/kubectl@master
+        with:
+          args: rollout restart deployment/abzy-kz
