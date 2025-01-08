@@ -14,7 +14,11 @@ export default function Page() {
         `}
       </p>
       <div className="my-8"></div>
-      <Image src={"/literallyMe.png"} alt="literrallyMe.png" width={256} height={256}/>
+      <picture>
+        <source srcSet="/literallyMe-dark.png" media="(prefers-color-scheme: dark)"/>
+        <source srcSet="/literallyMe.png"/>
+        <img src="/literallyMe.png" alt="literallyMe.png" width={256} height={256}/>
+      </picture>
       <p>literally, this guy is like me.</p>
       <p>sitting there, building some random stuff at 3am.</p>
     </section>
