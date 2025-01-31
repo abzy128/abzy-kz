@@ -7,7 +7,7 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  'https://upflare.abzy.kz':{
+  'https://status.abzy.kz':{
     name: 'status',
   },
   'https://whoami.abzy.kz':{
