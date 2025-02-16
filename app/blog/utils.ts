@@ -76,11 +76,13 @@ export function formatDate(date: string, includeRelative = false) {
     formattedDate = 'Today'
   }
 
-  let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
+  //let fullDate = targetDate.toLocaleString('en-us', {
+  //  month: 'long',
+  //  day: 'numeric',
+  //  year: 'numeric',
+  //})
+
+  let fullDate = targetDate.toISOString().substring(0, 10);
 
   if (!includeRelative) {
     return fullDate
