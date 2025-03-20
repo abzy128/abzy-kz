@@ -7,12 +7,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  'https://status.abzy.kz':{
+  'https://status.abzy.kz': {
     name: 'status',
-  },
-  'https://whoami.abzy.kz':{
-    name: 'who are you?',
-  },
+  }
 }
 
 export function Navbar() {
