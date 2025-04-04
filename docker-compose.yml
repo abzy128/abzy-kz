@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: 'abzy-kz'
+    image: 'abzy128/abzy-kz:main'
+    build: .
+    restart: unless-stopped
+
+networks:
+  default:
+    name: nginx
+    external: true
+
