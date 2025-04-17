@@ -24,9 +24,9 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
   }
   
   if (typeof endDate === "string") {
-    return `${formattedStartDate} - ${endDate}`;
+    return `${formattedStartDate} — ${endDate}`;
   }
   
   const formattedEndDate = formatDate(endDate);
-  return `${formattedStartDate} - ${formattedEndDate}`;
+  return `${formattedStartDate} — ${formattedEndDate}`;
 }
