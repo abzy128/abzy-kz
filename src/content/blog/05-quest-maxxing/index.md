@@ -2,6 +2,7 @@
 title: 'Quest-maxxing'
 description: 'My reflections on people being lost and finding their quest'
 date: '2025-03-20'
+draft: true
 ---
 
 ![Tweet from @yacineMTB](./yacineTweet.png)
