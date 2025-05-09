@@ -2,7 +2,7 @@
 company: "Business & Technology Services LLP"
 role: "Developer of Manufacturing Systems"
 dateStart: "2023-12-16"
-dateEnd: "Current"
+dateEnd: "2025-04-30"
 ---
 
 Tech: C#, ASP.NET Core, Entity Framework, SQL Server, JavaScript, TypeScript,
