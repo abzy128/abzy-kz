@@ -61,6 +61,8 @@ Here's what makes this approach compelling:
 - Capture and stream logs in real-time
 - Automatically clean up idle containers
 
+![Architecture](./architecture.png)
+
 ## What This Enables
 
 This architecture unlocks several powerful workflows:
