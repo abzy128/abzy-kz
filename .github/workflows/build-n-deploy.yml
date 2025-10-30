@@ -16,24 +16,19 @@ jobs:
     - name: checkout
       uses: actions/checkout@v4
 
-    - uses: pnpm/action-setup@v4
+    - name: setup bun
+      uses: oven-sh/setup-bun@v2
       with:
-        version: 10
-
-    - name: setup node
-      uses: actions/setup-node@v4
-      with:
-        node-version: 22
-        cache: 'pnpm'
+        bun-version: latest
     
     - name: install deps
-      run: pnpm i
+      run: bun install
     
     - name: lint
-      run: pnpm lint
+      run: bun run lint
     
     - name: build
-      run: pnpm build
+      run: bun run build
 
     - name: sync
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
