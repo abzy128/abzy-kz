@@ -4,6 +4,8 @@ description: 'We need to make robots do the trivial stuff'
 date: '2025-10-19'
 ---
 
+![Cloud is cool](./cloud-is-cool.png)
+
 The landscape of software development is shifting. For decades, we've been tethered to our local machines—configuring environments, managing dependencies, and wrestling with the infamous ["works on my machine" problem](https://coder.com/blog/it-works-on-my-machine-explained). But something interesting is happening: development is moving to the cloud, and AI agents are about to make this transition not just viable, but necessary.
 
 ## The Cloud Development Paradox
