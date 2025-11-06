@@ -42,7 +42,7 @@ However, [Claude Code](https://www.claude.com/product/claude-code) showed real p
 
 This is where things got interesting. I already maintain FAIR.ExeStation, an AWS Lambda-like project designed to run Docker containers with different inputs without rebuilding images. It handles simple Python, JavaScript, and .NET functions, and even has images that take React code and produce static websites.
 
-The breakthrough realization: FAIR.ExeStation could be extended to manage long-living containers hosting OpenCode.ai servers.
+The breakthrough realization: FAIR.ExeStation could be extended to manage long-living containers hosting OpenCode servers.
 
 ## The Technical Architecture
 
@@ -50,7 +50,7 @@ Here's what makes this approach compelling:
 
 **Isolated Execution**: Each agent runs in its own Docker container with a clean file system and controlled resource limits. No cross-contamination, no security concerns.
 
-**REST API Control**: OpenCode.ai exposes REST API endpoints, making it perfect for integration with external platforms. You can start tasks, monitor progress, retrieve outputs, and terminate processes programmatically.
+**REST API Control**: OpenCode exposes REST API endpoints, making it perfect for integration with external platforms. You can start tasks, monitor progress, retrieve outputs, and terminate processes programmatically.
 
 **Connector Flexibility**: The system can integrate with VS Code Server, JetBrains IDEs via their remote development protocols, and standard terminal interfaces. The agent doesn't care what editor you use—it speaks the universal language of file systems and command lines.
 
@@ -61,7 +61,7 @@ Here's what makes this approach compelling:
 - Capture and stream logs in real-time
 - Automatically clean up idle containers
 
-![Architecture](./architecture.png)
+![System architecture diagram showing Docker containers with OpenCode.ai servers orchestrated by FAIR.ExeStation](./architecture.png)
 
 ## What This Enables
 
@@ -87,7 +87,7 @@ Yes, agents iterate through solutions slower than a human typing code. But they 
 
 I'm building this system incrementally. The core infrastructure exists with FAIR.ExeStation. The next milestones:
 1. Extend the container lifecycle management for long-running processes
-2. Integrate OpenCode.ai server deployment
+2. Integrate OpenCode server deployment
 3. Build the REST API layer for our AI platform
 4. Develop the UI for defining tasks and monitoring agent progress
 
@@ -103,8 +103,8 @@ That's what cloud development environments were meant for all along. It just too
 
 ---
 
-*Generative AI was utilized to convert my mess of a post into readable content.*
+*Generative AI was used to convert my mess of a post into readable content.*
 
 ---
 
-*Our product is not our yet, but in the meantime, you can check out [t3 chat](https://t3.chat), it is cool.*
+*Our product is not out yet, but in the meantime, you can check out [t3 chat](https://t3.chat), it is cool.*
