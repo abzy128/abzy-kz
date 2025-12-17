@@ -2,6 +2,7 @@
 title: 'Background Agents and Software Development in Cloud'
 description: 'We need to make robots do the trivial stuff'
 date: '2025-10-19'
+draft: true
 ---
 
 ![Cloud is cool](./cloud-is-cool.png)
