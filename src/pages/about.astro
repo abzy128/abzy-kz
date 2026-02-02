@@ -1,0 +1,50 @@
+---
+const pageTitle = "About Me";
+const identity = {
+    firstName: "Abzal",
+    middleName: "Kurmangazyuly",
+    lastName: "Orazbek",
+    city: "Astana",
+    country: "Kazakhstan",
+    occupation: "Software Engineer",
+};
+
+const skills = ["HTML", "C#", "Python"];
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+        <style>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            .skill {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <h1>{pageTitle}</h1>
+        <p>{identity.firstName} {identity.middleName} {identity.lastName}</p>
+        <p>{identity.city}, {identity.country}</p>
+        <p>{identity.occupation}</p>
+        <ul>
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
+        </ul>
+    </body>
+</html>
