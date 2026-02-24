@@ -5,7 +5,10 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
+import { Image } from "astro:assets";
 import { SITE, HOME, SOCIALS } from "@consts";
+import literallyMe from "@assets/literallyMe.png";
+import literallyMeDark from "@assets/literallyMe-dark.png";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -42,17 +45,17 @@ const work = await Promise.all(
           <p class="animate">I am a dev.<br />I build things.</p>
           <div class="my-8"></div>
           <div class="flex justify-start">
-            <img
-              src="/literallyMe.png"
+            <Image
+              src={literallyMe}
               class="block dark:hidden animate"
-              alt="literallyMe.png"
+              alt="literallyMe"
               width={256}
               height={256}
             />
-            <img
-              src="/literallyMe-dark.png"
+            <Image
+              src={literallyMeDark}
               class="hidden dark:block animate"
-              alt="literallyMe.png"
+              alt="literallyMe"
               width={256}
               height={256}
             />
