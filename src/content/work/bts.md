@@ -6,4 +6,3 @@ dateEnd: "2025-04-30"
 ---
 
 developed some stuff for manufacturing.
-

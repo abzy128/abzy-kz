@@ -1,12 +1,13 @@
 ---
-title: 'Deploy to Kubernetes'
-description: 'I have deployed this website to my self-hosted Kubernetes cluster.'
-date: '2024-07-21'
+title: "Deploy to Kubernetes"
+description: "I have deployed this website to my self-hosted Kubernetes cluster."
+date: "2024-07-21"
 ---
 
 I have deployed this website to my self-hosted Kubernetes cluster.
 
 # GitHub Actions
+
 I have set up a GitHub Actions workflow which runs on the self-hosted RHEL server
 
 [GitHub Actions Workflow](https://github.com/abzy128/abzy-kz/actions/runs/10024681295)

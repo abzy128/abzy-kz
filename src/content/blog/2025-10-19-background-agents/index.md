@@ -1,7 +1,7 @@
 ---
-title: 'Background Agents and Software Development in Cloud'
-description: 'We need to make robots do the trivial stuff'
-date: '2025-10-19'
+title: "Background Agents and Software Development in Cloud"
+description: "We need to make robots do the trivial stuff"
+date: "2025-10-19"
 draft: true
 ---
 
@@ -30,6 +30,7 @@ The limitation? Code becomes non-deterministic. When code is generated from natu
 ## The Reality Check: My Journey
 
 I've spent considerable time with commercial solutions like [Cursor Agent](https://cursor.com/docs/background-agent) and [GitHub Copilot's background agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent). They work, and they work well. But they have two critical limitations for my use case:
+
 1. They're not self-hostable
 2. They offer minimal programmatic control via API
 
@@ -58,6 +59,7 @@ Here's what makes this approach compelling:
 **Connector Flexibility**: The system can integrate with VS Code Server, JetBrains IDEs via their remote development protocols, and standard terminal interfaces. The agent doesn't care what editor you use—it speaks the universal language of file systems and command lines.
 
 **Container Orchestration**: Using FAIR.ExeStation's existing infrastructure, we can:
+
 - Spin up agent containers on-demand
 - Route requests to specific containers
 - Monitor resource usage and health
@@ -89,12 +91,13 @@ Yes, agents iterate through solutions slower than a human typing code. But they 
 ## What's Next
 
 I'm building this system incrementally. The core infrastructure exists with FAIR.ExeStation. The next milestones:
+
 1. Extend the container lifecycle management for long-running processes
 2. Integrate OpenCode server deployment
 3. Build the REST API layer for our AI platform
 4. Develop the UI for defining tasks and monitoring agent progress
 
-Will it work perfectly? No. Will it be deterministic? Absolutely not. But it will be *useful*, and that's what matters.
+Will it work perfectly? No. Will it be deterministic? Absolutely not. But it will be _useful_, and that's what matters.
 
 The future of software development isn't about replacing developers with AI. It's about giving developers AI teammates that work while they sleep. And those teammates need somewhere to run—isolated, scalable, and always available.
 
@@ -102,12 +105,12 @@ That's what cloud development environments were meant for all along. It just too
 
 ---
 
-*This is an ongoing experiment. I'll share updates as the platform evolves. If you're working on similar problems, I'd love to hear about your approach.*
+_This is an ongoing experiment. I'll share updates as the platform evolves. If you're working on similar problems, I'd love to hear about your approach._
 
 ---
 
-*Generative AI was used to convert my mess of a post into readable content.*
+_Generative AI was used to convert my mess of a post into readable content._
 
 ---
 
-*Our product is not out yet, but in the meantime, you can check out [t3 chat](https://t3.chat), it is cool.*
+_Our product is not out yet, but in the meantime, you can check out [t3 chat](https://t3.chat), it is cool._

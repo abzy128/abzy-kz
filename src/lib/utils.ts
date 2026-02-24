@@ -13,21 +13,21 @@ export function readingTime(html: string | undefined) {
   if (!html) return "1 min read";
   const textOnly = html.replace(/<[^>]+>/g, "");
   const wordCount = textOnly.split(/\s+/).length;
-  const readingTimeMinutes = ((wordCount / 200) + 1).toFixed();
+  const readingTimeMinutes = (wordCount / 200 + 1).toFixed();
   return `${readingTimeMinutes} min read`;
 }
 
 export function dateRange(startDate: Date, endDate?: Date | string): string {
   const formattedStartDate = formatDate(startDate);
-  
+
   if (!endDate) {
     return formattedStartDate;
   }
-  
+
   if (typeof endDate === "string") {
     return `${formattedStartDate} — ${endDate}`;
   }
-  
+
   const formattedEndDate = formatDate(endDate);
   return `${formattedStartDate} — ${formattedEndDate}`;
 }

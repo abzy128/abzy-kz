@@ -2,7 +2,7 @@ name: build and deploy
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -10,27 +10,27 @@ jobs:
     name: deploy
     runs-on: ubuntu-latest
     permissions:
-      contents: read 
+      contents: read
     steps:
-    - name: checkout
-      uses: actions/checkout@v4
+      - name: checkout
+        uses: actions/checkout@v4
 
-    - name: setup bun
-      uses: oven-sh/setup-bun@v2
-      with:
-        bun-version: latest
-    
-    - name: install deps
-      run: bun install
+      - name: setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
-    - name: build
-      run: bun run build
+      - name: install deps
+        run: bun install
 
-    - name: sync
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER}}
-        username: ${{ secrets.FTP_USERNAME}}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
-        server-dir: ./httpdocs/
+      - name: build
+        run: bun run build
+
+      - name: sync
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER}}
+          username: ${{ secrets.FTP_USERNAME}}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./httpdocs/

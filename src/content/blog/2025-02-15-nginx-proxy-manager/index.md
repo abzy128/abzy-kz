@@ -1,7 +1,7 @@
 ---
-title: 'Nginx Proxy Manager'
-description: 'I have replaced K8S with Nginx Proxy Manager'
-date: '2025-02-15'
+title: "Nginx Proxy Manager"
+description: "I have replaced K8S with Nginx Proxy Manager"
+date: "2025-02-15"
 ---
 
 For a while I thought that Nginx Proxy Manager is a paid software, so I kept using [k3s](https://k3s.io/).
@@ -24,12 +24,12 @@ networks:
 
 services:
   app:
-    image: 'jc21/nginx-proxy-manager:latest'
+    image: "jc21/nginx-proxy-manager:latest"
     restart: unless-stopped
     ports:
-      - '80:80'
-      - '172.22.22.23:81:81'
-      - '443:443'
+      - "80:80"
+      - "172.22.22.23:81:81"
+      - "443:443"
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt

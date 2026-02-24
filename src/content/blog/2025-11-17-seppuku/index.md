@@ -1,7 +1,7 @@
 ---
-title: 'How to work in a metallurgy company and not commit seppuku'
-description: ''
-date: '2025-11-17'
+title: "How to work in a metallurgy company and not commit seppuku"
+description: ""
+date: "2025-11-17"
 draft: true
 ---
 

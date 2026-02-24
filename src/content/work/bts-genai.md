@@ -6,4 +6,3 @@ dateEnd: "Current"
 ---
 
 Just doing AI stuff for manufacturing in Kazakhstan :)
-

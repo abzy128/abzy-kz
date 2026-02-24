@@ -1,7 +1,7 @@
 ---
-title: 'Are we getting replaced?'
-description: 'No and yes'
-date: '2025-08-25'
+title: "Are we getting replaced?"
+description: "No and yes"
+date: "2025-08-25"
 ---
 
 I frequently see people freak out, fearing getting replaced by AI.
@@ -43,24 +43,27 @@ Yep, that works for a bit, until you hit context limit and hallucinations.
 AI is a double-edged sword.
 
 So, are we getting replaced?
+
 - Yes, if you are going to ignore progress in the software engineering field.
 - No, if you are willing to harvest the tool in the open field and use it to your advantage.
 
 I believe in future, traditional programming will be done mainly for recreational purposes or for specific, non-trivial, hard tasks.
 You mainly write software in English and go for a programming language when you need something specific which exceeds the limitations of the tools you are using.
-I like to think about AI in coding using this analogy: 
+I like to think about AI in coding using this analogy:
+
 - You use an excavator/motorized digger to dig a lot of dirt. (industry standard software development)
 - You can also use a shovel, but it is ineffective compared to an excavator. Maybe you like it for growing a muscle or just for physical work. (recreational programming)
 - However, for archaeology, you need to be delicate and really know what you are doing (non-trivial, hard software)
 
 Another one:
+
 - You can just buy vegetables from a convenience store. (You do the most effective approach)
 - You can also have your own garden. (recreation, financial difference is negligible)
 - You may need something specific, like fresh, hard peaches (non-trivial, not best as an example)
 
 Do not fear getting replaced. Be happy that your routine is trivial and can be automated.
-Makes use of the fruits of the software engineering tree. 
+Makes use of the fruits of the software engineering tree.
 Value yourself and your time.
-Be on the bleeding edge of your industry. 
+Be on the bleeding edge of your industry.
 Be curious about the new toys you get.
 Always learn and prosper.
