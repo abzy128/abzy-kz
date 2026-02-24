@@ -5,10 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
-import { Image } from "astro:assets";
 import { SITE, HOME, SOCIALS } from "@consts";
-import literallyMe from "@assets/literallyMe.png";
-import literallyMeDark from "@assets/literallyMe-dark.png";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -42,27 +39,17 @@ const work = await Promise.all(
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
-          <p class="animate">I am a dev.<br />I build things.</p>
-          <div class="my-8"></div>
-          <div class="flex justify-start">
-            <Image
-              src={literallyMe}
-              class="block dark:hidden animate"
-              alt="literallyMe"
-              width={256}
-              height={256}
-            />
-            <Image
-              src={literallyMeDark}
-              class="hidden dark:block animate"
-              alt="literallyMe"
-              width={256}
-              height={256}
-            />
-          </div>
-          <p>
-            literally, this guy is like me. <br />
-            sitting there, building some random stuff at 3am.
+          <p class="animate">
+            I'm Abzal — a developer based in Astana, Kazakhstan.
+          </p>
+          <p class="animate">
+            I build backend systems, infrastructure, and developer tooling — the
+            kind of stuff that makes other people's work a little easier. Right
+            now I'm working on a platform where humans and AI agents work side by
+            side.
+          </p>
+          <p class="animate">
+            When I'm not in the terminal, I'm probably gaming.
           </p>
         </article>
       </section>
