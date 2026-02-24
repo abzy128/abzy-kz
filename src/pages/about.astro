@@ -1,4 +1,6 @@
 ---
+import "@/styles/global.css";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 const pageTitle = "About Me";
 const identity = {
     firstName: "Abzal",
@@ -10,41 +12,34 @@ const identity = {
 };
 
 const skills = ["HTML", "C#", "Python"];
+
+const h1Size = "4rem";
+const h1Color = "purple";
+const pSize = "1.5rem";
+const skillSize = "1.2rem";
+const skillWeight = "bold";
+const skillColor = "crimson";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
-        <style>
-            h1 {
-                color: purple;
-                font-size: 4rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-            .skill {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        <h1>{pageTitle}</h1>
-        <p>{identity.firstName} {identity.middleName} {identity.lastName}</p>
-        <p>{identity.city}, {identity.country}</p>
-        <p>{identity.occupation}</p>
-        <ul>
-            {skills.map((skill) => <li class="skill">{skill}</li>)}
-        </ul>
-    </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+    <style define:vars={{h1Color, h1Size, pSize, skillSize, skillWeight, skillColor}}>
+        h1 {
+            color: var(--h1Color);
+            font-size: var(--h1Size);
+        }
+        p {
+            font-size: var(--pSize);
+        }
+        .skill {
+            font-size: var(--skillSize);
+            font-weight: var(--skillWeight);
+            color: var(--skillColor);
+        }
+    </style>
+    <p>{identity.firstName} {identity.middleName} {identity.lastName}</p>
+    <p>{identity.city}, {identity.country}</p>
+    <p>{identity.occupation}</p>
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+</BaseLayout>

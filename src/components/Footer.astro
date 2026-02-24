@@ -1,0 +1,33 @@
+---
+import LinkItem from "@/components/LinkItem.astro";
+const links = [
+    { id: "email", href: "mailto:me@abzy.kz", icon: "email" },
+    { id: "github", href: "https://github.com/abzy128", icon: "github" },
+    { id: "twitter", href: "https://x.com/abzal_orazbek", icon: "twitter" },
+    {
+        id: "linkedin",
+        href: "https://www.linkedin.com/in/abzal-orazbek",
+        icon: "linkedin",
+    },
+];
+---
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <ul>
+        {
+            links.map((link) => (
+                <li>
+                    <LinkItem id={link.id} href={link.href} icon={link.icon} />
+                </li>
+            ))
+        }
+    </ul>
+</footer>
