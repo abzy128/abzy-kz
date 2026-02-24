@@ -1,13 +1,14 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import { HOME } from "@consts";
+import { getPosts } from "@lib/posts";
 
 type Context = {
   site: string;
 };
 
 export async function GET(context: Context) {
-  const blog = (await getCollection("blog")).filter((post) => !post.data.draft);
+  const blog = await getPosts();
 
   const projects = (await getCollection("projects")).filter((project) => !project.data.draft);
 
