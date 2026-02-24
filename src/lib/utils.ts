@@ -9,7 +9,8 @@ export function formatDate(date: Date) {
   return date.toISOString().slice(0, 10);
 }
 
-export function readingTime(html: string) {
+export function readingTime(html: string | undefined) {
+  if (!html) return "1 min read";
   const textOnly = html.replace(/<[^>]+>/g, "");
   const wordCount = textOnly.split(/\s+/).length;
   const readingTimeMinutes = ((wordCount / 200) + 1).toFixed();
