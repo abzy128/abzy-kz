@@ -2,6 +2,7 @@
   "name": "abzy-kz",
   "version": "1.0.0",
   "type": "module",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
@@ -21,10 +22,11 @@
     "@fontsource/lora": "^5.2.8",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^6.0.5",
+    "astro": "^6.0.8",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.5.0",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.8",
@@ -32,5 +34,11 @@
     "oxlint": "^1.56.0",
     "sharp": "^0.34.5",
     "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
