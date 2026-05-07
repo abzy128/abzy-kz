@@ -2,7 +2,7 @@
   "name": "abzy-kz",
   "version": "1.0.0",
   "type": "module",
-  "packageManager": "pnpm@10.33.2",
+  "packageManager": "pnpm@11.0.8",
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
-    "oxfmt": "^0.47.0",
-    "oxlint": "^1.62.0",
+    "oxfmt": "^0.48.0",
+    "oxlint": "^1.63.0",
     "sharp": "^0.34.5",
     "typescript": "^6.0.3"
   },
