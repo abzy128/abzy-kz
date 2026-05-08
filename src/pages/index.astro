@@ -129,11 +129,19 @@ const work = await Promise.all(
               </li>
             ))
           }
-          <li class="line-clamp-1">
+          <li class="flex gap-x-2 text-nowrap">
             <Link
               href={`mailto:${SITE.EMAIL}`}
               aria-label={`Email ${SITE.NAME}`}>
               email
+            </Link>
+            {"/"}
+          </li>
+          <li class="line-clamp-1">
+            <Link
+              href="/public-key.txt"
+              aria-label={`Download ${SITE.NAME}'s public GPG key`}>
+              gpg key
             </Link>
           </li>
         </ul>
