@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "abzal-dev",
+  "compatibility_date": "2026-08-10",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none",
+  },
+  "routes": [
+    { "pattern": "abzal.dev", "custom_domain": true },
+    { "pattern": "www.abzal.dev", "custom_domain": true },
+  ],
+  "observability": {
+    "enabled": true,
+  },
+}
