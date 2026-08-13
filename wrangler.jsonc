@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "abzal-dev",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./dist",
+  },
+  "routes": [
+    { "pattern": "abzal.dev", "custom_domain": true },
+    { "pattern": "www.abzal.dev", "custom_domain": true },
+  ],
+}
