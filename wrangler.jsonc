@@ -5,9 +5,9 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
     { "pattern": "abzal.dev", "custom_domain": true },
-    { "pattern": "www.abzal.dev", "custom_domain": true },
+    { "pattern": "www.abzal.dev", "custom_domain": true }
   ],
   "observability": {
-    "enabled": true,
-  },
+    "enabled": true
+  }
 }
