@@ -2,9 +2,3 @@ allowBuilds:
   esbuild: true
   sharp: true
   workerd: true
-
-# Astro 6 and the Cloudflare adapter build on Vite 7. Without this, @tailwindcss/vite
-# resolves its own Vite 8 copy and its plugin runs against a different Vite than Astro,
-# failing the CSS build with "Missing field `tsconfigPaths`".
-overrides:
-  vite: ^7.3.2

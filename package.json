@@ -13,18 +13,16 @@
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check",
-    "generate-types": "wrangler types"
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.7.0",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/lora": "^5.2.8",
-    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.4.8",
+    "astro": "^6.2.2",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.4",
