@@ -122,7 +122,8 @@ const work = await Promise.all(
                 <Link
                   href={SOCIAL.HREF}
                   external
-                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
+                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
+                  data-contact-platform={SOCIAL.NAME}>
                   {SOCIAL.NAME}
                 </Link>
                 {"/"}
@@ -149,3 +150,13 @@ const work = await Promise.all(
     </div>
   </Container>
 </PageLayout>
+
+<script is:inline>
+  document.querySelectorAll("[data-contact-platform]").forEach((link) => {
+    link.addEventListener("click", () => {
+      window.posthog?.capture("contact_link_opened", {
+        platform: link.dataset.contactPlatform,
+      });
+    });
+  });
+</script>
