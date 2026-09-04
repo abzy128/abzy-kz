@@ -17,25 +17,25 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/lora": "^5.3.0",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.1",
+    "astro": "^7.2.10",
     "clsx": "^2.1.1",
-    "posthog-js": "^1.417.1",
+    "posthog-js": "^1.425.1",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.3",
-    "zod": "^4.4.3"
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
-    "oxfmt": "^0.63.0",
-    "oxlint": "^1.78.0",
-    "sharp": "^0.35.3",
+    "oxfmt": "^0.66.0",
+    "oxlint": "^1.81.0",
+    "sharp": "^0.35.4",
     "typescript": "^6.0.3",
-    "wrangler": "^4.122.0"
+    "wrangler": "^4.128.0"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.25.0"
 }
