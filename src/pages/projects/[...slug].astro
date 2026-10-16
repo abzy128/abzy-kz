@@ -45,10 +45,7 @@ const { Content } = await render(project);
       {(project.data.demoURL || project.data.repoURL) && (
         <nav class="animate flex gap-1">
           {project.data.demoURL && (
-            <Link
-              href={project.data.demoURL}
-              external
-              data-project-resource="demo">
+            <Link href={project.data.demoURL} external>
               demo
             </Link>
           )}
@@ -56,10 +53,7 @@ const { Content } = await render(project);
             <span>/</span>
           )}
           {project.data.repoURL && (
-            <Link
-              href={project.data.repoURL}
-              external
-              data-project-resource="repository">
+            <Link href={project.data.repoURL} external>
               repo
             </Link>
           )}
@@ -71,14 +65,3 @@ const { Content } = await render(project);
     </article>
   </Container>
 </PageLayout>
-
-<script is:inline define:vars={{ projectId: project.id }}>
-  document.querySelectorAll("[data-project-resource]").forEach((link) => {
-    link.addEventListener("click", () => {
-      window.posthog?.capture("project_resource_opened", {
-        project_id: projectId,
-        resource_type: link.dataset.projectResource,
-      });
-    });
-  });
-</script>

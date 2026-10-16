@@ -5,6 +5,12 @@
   "assets": {
     "directory": "./dist",
   },
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true,
+    },
+  },
   "routes": [
     { "pattern": "abzal.dev", "custom_domain": true },
     { "pattern": "www.abzal.dev", "custom_domain": true },
